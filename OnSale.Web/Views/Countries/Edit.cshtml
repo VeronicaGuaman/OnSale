@@ -13,11 +13,7 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
+            <partial name="_Country" />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-success" />
                 <a asp-action="Index" class="btn btn-danger">Back to List</a>
