@@ -41,4 +41,5 @@ namespace OnSale.Common.Entities
             : ProductImages.FirstOrDefault().ImageFullPath;
 
     }
+
 }

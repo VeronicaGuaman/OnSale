@@ -24,3 +24,12 @@ namespace OnSale.Common.Entities
 
     }
 }
+
+
+public class UserRole
+{
+    public void GetUserRole()
+    {
+    }
+}
+
