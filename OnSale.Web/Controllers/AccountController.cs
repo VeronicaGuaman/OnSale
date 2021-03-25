@@ -6,8 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Controllers
-{
-    [Authorize(Roles = "Admin")]
+{    
     public class AccountController : Controller
     {
         private readonly IUserHelper _userHelper;
@@ -54,6 +53,11 @@ namespace OnSale.Web.Controllers
             await _userHelper.LogoutAsync();
             return RedirectToAction("Index", "Home");
         }
+        public IActionResult NotAuthorized()
+        {
+            return View();
+        }
+
     }
 
 }
